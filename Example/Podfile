@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'df-versioncheck-ios_Example' do
+  pod 'df-versioncheck-ios', :path => '../'
+
+  target 'df-versioncheck-ios_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

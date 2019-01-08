@@ -1,0 +1,16 @@
+PODS:
+  - df-versioncheck-ios (0.1.0)
+
+DEPENDENCIES:
+  - df-versioncheck-ios (from `../`)
+
+EXTERNAL SOURCES:
+  df-versioncheck-ios:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  df-versioncheck-ios: 0eb42cab7cf2833fadd517cf9afdba1ecb5bce4b
+
+PODFILE CHECKSUM: ccdd3eefd244dbc77408f000b3e496bb3e7d508e
+
+COCOAPODS: 1.5.3

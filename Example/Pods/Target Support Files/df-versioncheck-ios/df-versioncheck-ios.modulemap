@@ -1,0 +1,6 @@
+framework module df_versioncheck_ios {
+  umbrella header "df-versioncheck-ios-umbrella.h"
+
+  export *
+  module * { export * }
+}

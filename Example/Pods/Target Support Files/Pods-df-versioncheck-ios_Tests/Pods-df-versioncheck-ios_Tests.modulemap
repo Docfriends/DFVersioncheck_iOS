@@ -1,0 +1,6 @@
+framework module Pods_df_versioncheck_ios_Tests {
+  umbrella header "Pods-df-versioncheck-ios_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
