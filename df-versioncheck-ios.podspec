@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'df-versioncheck-ios'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = '앱 버전을 앱스토어에 있는 버전과 비교 라이브러리'
 
 # This description is used to generate tags and improve search results.
@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'df-versioncheck-ios/Classes/**/*'
   
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
   
   # s.resource_bundles = {
   #   'df-versioncheck-ios' => ['df-versioncheck-ios/Assets/*.png']
