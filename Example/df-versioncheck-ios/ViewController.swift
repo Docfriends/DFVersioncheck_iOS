@@ -15,6 +15,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        AppStore.versionCheck("") { (version) in
+            print(version)
+        }
+
         AppStore.versionCheck { (version) in
             print(version)
         }

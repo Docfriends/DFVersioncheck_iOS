@@ -40,12 +40,12 @@ public class AppStore: NSObject {
         let currentVer = (Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String) ?? "1.0"
         
         let bundleIdentifierValue = identifier ?? Bundle.main.bundleIdentifier
+        
         // appStore server
-        guard let bundleIdentifier = bundleIdentifierValue, let url = NSURL(string: "http://itunes.apple.com/lookup?bundleId=\(bundleIdentifier)") else {
+        guard let bundleIdentifier = bundleIdentifierValue, let url = NSURL(string: "http://itunes.apple.com/lookup?bundleId=\(bundleIdentifier)&t=\(Date().timeIntervalSince1970)") else {
             handler(AppVersion(url: "", currentVersion: currentVer, storeVersion: currentVer, isUpdate: false))
             return
         }
-        
         enum UpdateType {
             case none, update, noneUpdate
         }
