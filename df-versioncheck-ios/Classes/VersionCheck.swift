@@ -57,6 +57,7 @@ public class AppStore: NSObject {
                     let json = data,
                     let dict = try JSONSerialization.jsonObject(with: json, options: JSONSerialization.ReadingOptions.allowFragments) as? NSDictionary,
                     let results :NSArray = dict["results"] as? NSArray, results.count != 0,
+                    
                     let dic = results[0] as? NSDictionary,
                     let trackViewUrl = dic["trackViewUrl"] as? String,
                     let version = dic["version"] as? String else {
