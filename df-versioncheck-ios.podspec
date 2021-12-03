@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'df-versioncheck-ios'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = '앱 버전을 앱스토어에 있는 버전과 비교 라이브러리'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/Docfriends-Dev/df-versioncheck-ios.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '13.0'
 
   s.source_files = 'df-versioncheck-ios/Classes/**/*'
   
